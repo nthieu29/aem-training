@@ -20,6 +20,8 @@
     </header>
 
     <div class="page__title" data-sly-resource="${'title' @ decorationTagName='div'}"></div>
+    <h3 data-sly-use.developerInfo="com.adobe.training.core.DeveloperInfo"> Developer Info:
+        ${developerInfo.getDeveloperInfo}</h3>
     <div class="page__par" data-sly-resource="par"></div>
 
     <footer class="page__footer">
