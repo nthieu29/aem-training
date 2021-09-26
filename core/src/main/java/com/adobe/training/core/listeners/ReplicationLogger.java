@@ -16,6 +16,11 @@ import org.apache.sling.event.jobs.consumer.JobConsumer;
 import java.util.HashMap;
 import java.util.Map;
 
+/***
+ * Remember to config Apache Sling Service User Mapper Service
+ * com.adobe.training.core:training=training (with training is the AEM system user)
+ */
+
 @Component(immediate = true)
 @Service(JobConsumer.class)
 @Property(name = JobConsumer.PROPERTY_TOPICS, value = "com/adobe/training/core/replicationjob")
